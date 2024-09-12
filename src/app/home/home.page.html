@@ -1,20 +1,194 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Meu App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!--
+  <h1>Botões</h1>
+  
+  <ion-button>Padrão</ion-button>
+  <ion-button href="http://google.com.br">Link</ion-button>
+
+  <h4>Cores</h4>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+  <ion-button color="success">success</ion-button>
+  <ion-button color="warning">warning</ion-button>
+  <ion-button color="danger">danger</ion-button>
+  <ion-button color="light">light</ion-button>
+  <ion-button color="medium">medium</ion-button>
+  <ion-button color="dark">dark</ion-button>
+
+  <h4>Expandido</h4>
+  <ion-button expand="full" color="danger">Full</ion-button>
+  <ion-button expand="block" color="primary">block</ion-button>
+
+  <h4>Arredondado</h4>
+  <ion-button shape="round" color="warning">Arredondado</ion-button>
+
+  <h4>Preenchimento</h4>
+
+  <ion-button fill="outline" expand="block" color="medium">Arredondado</ion-button>
+
+  <h4>Ícones</h4>
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon>
+      Ícone
+  </ion-button><br>
+
+  <ion-button>
+    <ion-icon slot="end" name="star"></ion-icon>
+      Ícone
+  </ion-button><br>
+
+  <ion-button>
+
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button><br>
+
+  <ion-button>
+    <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+  </ion-button><br>
+
+  <h4>Tamanhos</h4>
+
+  <ion-button size="large">LArge</ion-button>
+  <ion-button>Padrão</ion-button>
+  <ion-button size="small">Small</ion-button>
+  -->
+
+  <h4>Listas</h4>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="end" name="add"></ion-icon>
+      <ion-label>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h4>Listas com avatar</h4>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://img.redbull.com/images/c_crop,w_3495,h_2329,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2014/08/19/1331672645623_4/uma-geleira-gigantesca"></ion-img>
+      </ion-avatar>
+      <ion-label>Lucas Martins</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://img.redbull.com/images/c_crop,w_3495,h_2329,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2014/08/19/1331672645623_4/uma-geleira-gigantesca"></ion-img>
+      </ion-avatar>
+      <ion-label>Kelly Martins</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h4>Listas com slide</h4>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Lucas Rodrigues Martins</ion-label>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option color="success">
+          <ion-icon slot="start" name="create"></ion-icon>
+          Alterar
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="start" name="trash"></ion-icon>
+          Excluir
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Kelly da Costa Martins</ion-label>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option color="success">
+          <ion-icon slot="start" name="create"></ion-icon>
+          Alterar
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="start" name="trash"></ion-icon>
+          Excluir
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <h4>Cartões</h4>
+
+  <ion-card color="danger" mode="ios">
+    <ion-img src="https://img.redbull.com/images/c_crop,w_3495,h_2329,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2014/08/19/1331672645623_4/uma-geleira-gigantesca"></ion-img>
+
+    <ion-card-content>
+      <ion-card-title>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </ion-card-title>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus facere. Necessitatibus sequi quo non, perferendis, inventore commodi labore voluptatibus exercitationem vel ipsum cumque voluptas quaerat itaque! Aspernatur, facere obcaecati?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light" mode="md">
+    <ion-img src="https://img.redbull.com/images/c_crop,w_3495,h_2329,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2014/08/19/1331672645623_4/uma-geleira-gigantesca"></ion-img>
+
+    <ion-card-content>
+      <ion-card-title>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </ion-card-title>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus facere. Necessitatibus sequi quo non, perferendis, inventore commodi labore voluptatibus exercitationem vel ipsum cumque voluptas quaerat itaque! Aspernatur, facere obcaecati?</p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <h4>Cartões com cabeçalho</h4>
+
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-title>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </ion-card-title>
+      <ion-card-subtitle>
+        perferendis, inventore commodi labor
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-img src="https://img.redbull.com/images/c_crop,w_3495,h_2329,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2014/08/19/1331672645623_4/uma-geleira-gigantesca"></ion-img>
+
+    <ion-card-content>
+      <ion-card-title>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </ion-card-title>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus facere. Necessitatibus sequi quo non, perferendis, inventore commodi labore voluptatibus exercitationem vel ipsum cumque voluptas quaerat itaque! Aspernatur, facere obcaecati?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <h4>Cartão com listagem de itens</h4>
+
+  <ion-card>
+
+    <ion-item href="http://google.com.br">
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</ion-label>
+    </ion-item>
+    <ion-item href="http://google.com.br">
+      <ion-icon slot="start" name="star"></ion-icon>
+      <ion-label>2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</ion-label>
+    </ion-item>
+
+  </ion-card>
+  
 </ion-content>
