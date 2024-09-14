@@ -312,6 +312,45 @@
     </ion-row>
   </ion-grid>
   -->
+  <!--
+  <h3>Data Biding (ligação de dados)</h3>
+  <h1>{{ titulo }}</h1>h1>
 
+  <h4>String interpolation</h4>
+
+
+  <ion-img src="{{ imagemRandomica }}"></ion-img>
+
+  <h4>Property Biding</h4>
+
+  <ion-img [src]="imagemLocal"></ion-img>
+
+  <h4>Event Biding</h4>
+  <ion-item>
+    <ion-label position="stacked">Seu nome:</ion-label>
+    <ion-input (input)="atualiza()"></ion-input>
+  </ion-item>
   
+  <ion-button (click)="acao()">Botão</ion-button>
+
+  -->
+
+  <h1>Navegação</h1>
+  <!--
+  <ion-button [href]="'/botoes/'" routerDirection="forward" expand="full">Botões</ion-button>
+-->
+  <ion-button (click)="abrirBotoes()" expand="full">Botões</ion-button>
+
+  <ion-button (click)="abrirListas()" expand="full">Lista</ion-button>
+  
+  <h1>Modelos</h1>
+
+  <ion-item>
+    <ion-label position="stacked">Digite a sua pesquisa:</ion-label>
+    <ion-input [(ngModel)]="pesquisa" type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="recuperar()" expand="full">Clique</ion-button>
+
+  <br>
+  {{ resultado }} <br>
 </ion-content>
